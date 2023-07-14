@@ -7,7 +7,7 @@ public class busqueda {
 
     public static void main(String[] args) {
        int a;
-       Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
        
        System.out.print("Ingrese la cantidad de personas: \n");
        a = sc.nextInt();
@@ -15,7 +15,7 @@ public class busqueda {
        /*Declaracion del arreglo*/
        int [] arg  = new int[a];
        
-       /*Inserción de elementos en el arreglo*/
+       /*Insercción de elementos en el arreglo*/
        for (int i = 0; i < arg.length; i++) {
            System.out.print("Ingrese el DNI: \n"); 
            arg[i]=sc.nextInt();
@@ -36,8 +36,8 @@ public class busqueda {
       
         /*mostrar arreglo*/   
        System.out.print("DNI: \n");
-        for (int i = 0; i < arg.length; i++) {
-            System.out.print("Posicion["+i+"] = " + arg[i]+"\n");      
+        for (int y = 0; y < arg.length; y++) {
+            System.out.print("Posicion["+y+"] = " + arg[y]+"\n");      
         }
         
         int posicion, dni_buscado;
@@ -47,7 +47,8 @@ public class busqueda {
         Arrays.sort(arg);
         posicion = Arrays.binarySearch(arg, dni_buscado);
         System.out.print("El DNI buscado se encuentra en la posicion: \n" + posicion);
-       }
     }
+}
+
     
 

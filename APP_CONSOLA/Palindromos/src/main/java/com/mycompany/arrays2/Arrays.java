@@ -17,6 +17,7 @@ public class Arrays {
         caracter = palabra.toCharArray();
         izq = 0;        
         dere = caracter.length-1;
+        
         while (izq < dere)
         {
             if(caracter[izq] == caracter[dere])
@@ -30,14 +31,15 @@ public class Arrays {
                 break;
             }       
         }
+        
         if(caracter.length/2 == 0)
         {
-            if (izq == dere)
+            if (izq-1 == dere)
             {
                 System.out.print("El texto es palindromo."); 
             }   
         }else{
-            if (izq-1 == dere)
+            if (izq == dere)
             {
                 System.out.print("El texto es palindromo."); 
             }
